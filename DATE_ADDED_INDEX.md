@@ -4,6 +4,7 @@ Newest files first. Links are automatically updated from Git history.
 
 | Date Added | Last Updated | Type | File |
 |---|---|---|---|
+| 2026-06-08 | 2026-06-08 | PNG | [bizee-icon-researching-licenses-1600x1356.png](bizee-icon-researching-licenses-1600x1356.png) |
 | 2026-06-08 | 2026-06-08 | PDF | [Trademark .pdf](Trademark%20.pdf) |
 | 2026-06-08 | 2026-06-08 | PNG | [01 Trademark Registration apple.png](01%20Trademark%20Registration%20apple.png) |
 | 2026-06-08 | 2026-06-08 | PNG | [bizee-icon-trademark-registration-1600x800.png](bizee-icon-trademark-registration-1600x800.png) |
