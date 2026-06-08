@@ -4,7 +4,7 @@ Newest files first. Links are automatically updated from Git history.
 
 | Date Added | Last Updated | Type | File |
 |---|---|---|---|
-| 2026-06-08 | 2026-06-08 | PNG | [Bizee-Tax-Consultant 2.png](Bizee-Tax-Consultant%202.png) |
+| 2026-06-08 | 2026-06-08 | PNG | [bizee-icon-state-filings-bundle.png](bizee-icon-state-filings-bundle.png) |
 | 2026-06-08 | 2026-06-08 | PNG | [Bizee-Tax-Consultant.png](Bizee-Tax-Consultant.png) |
 | 2026-06-08 | 2026-06-08 | PNG | [bizee-icon-registered-agent1024x1024.png](bizee-icon-registered-agent1024x1024.png) |
 | 2026-06-08 | 2026-06-08 | PNG | [bizee-icon-virtual-address-1600x800.png](bizee-icon-virtual-address-1600x800.png) |
