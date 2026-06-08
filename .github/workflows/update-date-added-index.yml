@@ -4,10 +4,17 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - DATE_ADDED_INDEX.md
+      - ASSET_INDEX.html
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: update-date-added-index-main
+  cancel-in-progress: true
 
 jobs:
   update-index:
@@ -19,35 +26,250 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Create date-added index
+      - name: Update local repo
         run: |
-          echo "# Date Added Index" > DATE_ADDED_INDEX.md
-          echo "" >> DATE_ADDED_INDEX.md
-          echo "Newest files first." >> DATE_ADDED_INDEX.md
-          echo "" >> DATE_ADDED_INDEX.md
+          git pull --rebase origin main
 
-          git ls-files | while read file; do
-            if [ "$file" != "DATE_ADDED_INDEX.md" ] && [ "$file" != ".github/workflows/update-date-added-index.yml" ]; then
-              added_date=$(git log --diff-filter=A --follow --format="%ad" --date=short -- "$file" | tail -1)
-              encoded_file=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$file")
-              echo "- **$added_date** - [$file]($encoded_file)" >> DATE_ADDED_INDEX.md
-            fi
-          done | sort -r > sorted-files.txt
+      - name: Create asset indexes
+        run: |
+          python3 << 'PY'
+          import html
+          import subprocess
+          import urllib.parse
+          from datetime import datetime, timezone
+          from pathlib import Path
 
-          cat sorted-files.txt >> DATE_ADDED_INDEX.md
-          rm sorted-files.txt
+          EXCLUDED = {
+              "DATE_ADDED_INDEX.md",
+              "ASSET_INDEX.html",
+              ".github/workflows/update-date-added-index.yml",
+          }
 
-      - name: Commit updated index
+          def git_lines(args):
+              result = subprocess.run(
+                  ["git"] + args,
+                  text=True,
+                  stdout=subprocess.PIPE,
+                  stderr=subprocess.PIPE,
+                  check=False,
+              )
+              return [line.strip() for line in result.stdout.splitlines() if line.strip()]
+
+          def first_added_info(file_path):
+              added = git_lines(["log", "--diff-filter=A", "--format=%ct|%cs", "--", file_path])
+              if added:
+                  return added[0].split("|", 1)
+
+              fallback = git_lines(["log", "--format=%ct|%cs", "--reverse", "--", file_path])
+              if fallback:
+                  return fallback[0].split("|", 1)
+
+              return ["0", "Unknown"]
+
+          def last_updated_info(file_path):
+              updated = git_lines(["log", "-1", "--format=%ct|%cs", "--", file_path])
+              if updated:
+                  return updated[0].split("|", 1)
+
+              return ["0", "Unknown"]
+
+          def file_type(file_path):
+              suffix = Path(file_path).suffix.lower().replace(".", "")
+              return suffix.upper() if suffix else "File"
+
+          def md_escape(text):
+              return (
+                  text.replace("\\", "\\\\")
+                  .replace("|", "\\|")
+                  .replace("[", "\\[")
+                  .replace("]", "\\]")
+              )
+
+          raw_files = subprocess.check_output(["git", "ls-files", "-z"])
+          files = [
+              item.decode("utf-8")
+              for item in raw_files.split(b"\0")
+              if item
+          ]
+
+          rows = []
+
+          for file_path in files:
+              if file_path in EXCLUDED:
+                  continue
+
+              added_epoch, added_date = first_added_info(file_path)
+              updated_epoch, updated_date = last_updated_info(file_path)
+
+              rows.append({
+                  "file": file_path,
+                  "encoded": urllib.parse.quote(file_path),
+                  "added_epoch": int(added_epoch),
+                  "added_date": added_date,
+                  "updated_epoch": int(updated_epoch),
+                  "updated_date": updated_date,
+                  "type": file_type(file_path),
+              })
+
+          rows.sort(key=lambda item: (-item["added_epoch"], item["file"].lower()))
+
+          with open("DATE_ADDED_INDEX.md", "w", encoding="utf-8") as md:
+              md.write("# Date Added Index\n\n")
+              md.write("Newest files first. Links are automatically updated from Git history.\n\n")
+              md.write("| Date Added | Last Updated | Type | File |\n")
+              md.write("|---|---|---|---|\n")
+
+              for row in rows:
+                  file_label = md_escape(row["file"])
+                  md.write(
+                      f"| {row['added_date']} | {row['updated_date']} | {row['type']} | "
+                      f"[{file_label}]({row['encoded']}) |\n"
+                  )
+
+          with open("ASSET_INDEX.html", "w", encoding="utf-8") as page:
+              page.write("""<!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <title>Asset Index</title>
+            <style>
+              body {
+                font-family: Arial, sans-serif;
+                margin: 24px;
+                color: #24292f;
+              }
+
+              h1 {
+                margin-bottom: 8px;
+              }
+
+              .note {
+                margin-bottom: 16px;
+                color: #57606a;
+              }
+
+              input {
+                width: 100%;
+                max-width: 420px;
+                padding: 10px;
+                margin-bottom: 16px;
+                border: 1px solid #d0d7de;
+                border-radius: 6px;
+                font-size: 14px;
+              }
+
+              table {
+                width: 100%;
+                border-collapse: collapse;
+              }
+
+              th,
+              td {
+                border: 1px solid #d0d7de;
+                padding: 8px;
+                text-align: left;
+              }
+
+              th {
+                background: #f6f8fa;
+                cursor: pointer;
+              }
+
+              tr:nth-child(even) {
+                background: #f6f8fa;
+              }
+
+              a {
+                color: #0969da;
+              }
+            </style>
+          </head>
+          <body>
+            <h1>Asset Index</h1>
+            <p class="note">Search or click a column header to sort. Default view is newest files first.</p>
+
+            <input id="search" type="text" placeholder="Search files..." onkeyup="filterTable()">
+
+            <table id="assetTable">
+              <thead>
+                <tr>
+                  <th onclick="sortTable(0)">Date Added</th>
+                  <th onclick="sortTable(1)">Last Updated</th>
+                  <th onclick="sortTable(2)">Type</th>
+                  <th onclick="sortTable(3)">File</th>
+                </tr>
+              </thead>
+              <tbody>
+          """)
+
+              for row in rows:
+                  file_html = html.escape(row["file"])
+                  href = html.escape(row["encoded"])
+                  page.write(
+                      f'      <tr>'
+                      f'<td data-sort="{row["added_epoch"]}">{row["added_date"]}</td>'
+                      f'<td data-sort="{row["updated_epoch"]}">{row["updated_date"]}</td>'
+                      f'<td>{html.escape(row["type"])}</td>'
+                      f'<td><a href="{href}">{file_html}</a></td>'
+                      f'</tr>\n'
+                  )
+
+              page.write("""    </tbody>
+            </table>
+
+            <script>
+              function filterTable() {
+                const filter = document.getElementById("search").value.toLowerCase();
+                const rows = document.querySelectorAll("#assetTable tbody tr");
+
+                rows.forEach(row => {
+                  row.style.display = row.innerText.toLowerCase().includes(filter) ? "" : "none";
+                });
+              }
+
+              function sortTable(columnIndex) {
+                const table = document.getElementById("assetTable");
+                const tbody = table.tBodies[0];
+                const rows = Array.from(tbody.rows);
+                const currentDirection = table.getAttribute("data-sort-dir") || "desc";
+                const nextDirection = currentDirection === "asc" ? "desc" : "asc";
+
+                rows.sort((a, b) => {
+                  const aCell = a.cells[columnIndex];
+                  const bCell = b.cells[columnIndex];
+
+                  const aValue = aCell.getAttribute("data-sort") || aCell.innerText.toLowerCase();
+                  const bValue = bCell.getAttribute("data-sort") || bCell.innerText.toLowerCase();
+
+                  if (!isNaN(aValue) && !isNaN(bValue)) {
+                    return nextDirection === "asc" ? aValue - bValue : bValue - aValue;
+                  }
+
+                  return nextDirection === "asc"
+                    ? aValue.localeCompare(bValue)
+                    : bValue.localeCompare(aValue);
+                });
+
+                rows.forEach(row => tbody.appendChild(row));
+                table.setAttribute("data-sort-dir", nextDirection);
+              }
+            </script>
+          </body>
+          </html>
+          """)
+          PY
+
+      - name: Commit updated indexes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add DATE_ADDED_INDEX.md
+          git add DATE_ADDED_INDEX.md ASSET_INDEX.html
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update date added index"
+            git commit -m "Update asset indexes [skip ci]"
             git pull --rebase origin main
             git push
           fi
