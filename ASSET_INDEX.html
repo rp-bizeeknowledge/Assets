@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Asset Index</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 24px;
+      color: #24292f;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    .note {
+      margin-bottom: 16px;
+      color: #57606a;
+    }
+
+    input {
+      width: 100%;
+      max-width: 420px;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #d0d7de;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background: #f6f8fa;
+      cursor: pointer;
+    }
+
+    tr:nth-child(even) {
+      background: #f6f8fa;
+    }
+
+    a {
+      color: #0969da;
+    }
+  </style>
+</head>
+<body>
+  <h1>Asset Index</h1>
+  <p class="note">Search or click a column header to sort. Default view is newest files first.</p>
+
+  <input id="search" type="text" placeholder="Search files..." onkeyup="filterTable()">
+
+  <table id="assetTable">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">Date Added</th>
+        <th onclick="sortTable(1)">Last Updated</th>
+        <th onclick="sortTable(2)">Type</th>
+        <th onclick="sortTable(3)">File</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td data-sort="1780931036">2026-06-08</td><td data-sort="1780931036">2026-06-08</td><td>PNG</td><td><a href="bizee-icon-virtual-address-1600x800.png">bizee-icon-virtual-address-1600x800.png</a></td></tr>
+      <tr><td data-sort="1780931036">2026-06-08</td><td data-sort="1780931036">2026-06-08</td><td>PNG</td><td><a href="bizee-icon-virtual-address-business-1024x1024.png">bizee-icon-virtual-address-business-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780931036">2026-06-08</td><td data-sort="1780931036">2026-06-08</td><td>PNG</td><td><a href="bizee-icon-virtual-address-personal-1024x1024.png">bizee-icon-virtual-address-personal-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780679008">2026-06-05</td><td data-sort="1780679008">2026-06-05</td><td>PNG</td><td><a href="missing-name.png">missing-name.png</a></td></tr>
+      <tr><td data-sort="1780677003">2026-06-05</td><td data-sort="1780677003">2026-06-05</td><td>PNG</td><td><a href="outdated-contact-info.png">outdated-contact-info.png</a></td></tr>
+      <tr><td data-sort="1780673977">2026-06-05</td><td data-sort="1780673977">2026-06-05</td><td>PNG</td><td><a href="email-blank-space.png">email-blank-space.png</a></td></tr>
+      <tr><td data-sort="1780673977">2026-06-05</td><td data-sort="1780673977">2026-06-05</td><td>PNG</td><td><a href="email-other-lang-after.png">email-other-lang-after.png</a></td></tr>
+      <tr><td data-sort="1780673977">2026-06-05</td><td data-sort="1780673977">2026-06-05</td><td>PNG</td><td><a href="email-other-lang-before.png">email-other-lang-before.png</a></td></tr>
+      <tr><td data-sort="1780673977">2026-06-05</td><td data-sort="1780673977">2026-06-05</td><td>PNG</td><td><a href="email-signature.png">email-signature.png</a></td></tr>
+      <tr><td data-sort="1780670467">2026-06-05</td><td data-sort="1780670467">2026-06-05</td><td>PNG</td><td><a href="intl-call.png">intl-call.png</a></td></tr>
+      <tr><td data-sort="1780612456">2026-06-04</td><td data-sort="1780612456">2026-06-04</td><td>PDF</td><td><a href="COGS.pdf">COGS.pdf</a></td></tr>
+      <tr><td data-sort="1780612264">2026-06-04</td><td data-sort="1780612264">2026-06-04</td><td>PDF</td><td><a href="Cali%20DBA.pdf">Cali DBA.pdf</a></td></tr>
+      <tr><td data-sort="1780612264">2026-06-04</td><td data-sort="1780612264">2026-06-04</td><td>PDF</td><td><a href="Oregon%20DBA.pdf">Oregon DBA.pdf</a></td></tr>
+      <tr><td data-sort="1780612264">2026-06-04</td><td data-sort="1780612264">2026-06-04</td><td>PDF</td><td><a href="Texas%20DBA.pdf">Texas DBA.pdf</a></td></tr>
+      <tr><td data-sort="1780610365">2026-06-04</td><td data-sort="1780610365">2026-06-04</td><td>GIF</td><td><a href="Additional%20fundss.gif">Additional fundss.gif</a></td></tr>
+      <tr><td data-sort="1780609587">2026-06-04</td><td data-sort="1780609587">2026-06-04</td><td>PDF</td><td><a href="Articles%20of%20Amendment.pdf">Articles of Amendment.pdf</a></td></tr>
+      <tr><td data-sort="1780609409">2026-06-04</td><td data-sort="1780609409">2026-06-04</td><td>GIF</td><td><a href="additional%20funds.gif">additional funds.gif</a></td></tr>
+      <tr><td data-sort="1780609268">2026-06-04</td><td data-sort="1780609268">2026-06-04</td><td>PNG</td><td><a href="ai-example.png">ai-example.png</a></td></tr>
+      <tr><td data-sort="1780609268">2026-06-04</td><td data-sort="1780609268">2026-06-04</td><td>PNG</td><td><a href="ai-misuse.png">ai-misuse.png</a></td></tr>
+      <tr><td data-sort="1780609268">2026-06-04</td><td data-sort="1780609268">2026-06-04</td><td>PNG</td><td><a href="bizee-agent-1.png">bizee-agent-1.png</a></td></tr>
+      <tr><td data-sort="1780609268">2026-06-04</td><td data-sort="1780609268">2026-06-04</td><td>PNG</td><td><a href="email-sections.png">email-sections.png</a></td></tr>
+      <tr><td data-sort="1780609268">2026-06-04</td><td data-sort="1780609268">2026-06-04</td><td>PNG</td><td><a href="zendesk-ai.png">zendesk-ai.png</a></td></tr>
+      <tr><td data-sort="1780608477">2026-06-04</td><td data-sort="1780608477">2026-06-04</td><td>PNG</td><td><a href="additional%20funds%201.png">additional funds 1.png</a></td></tr>
+      <tr><td data-sort="1780608477">2026-06-04</td><td data-sort="1780608477">2026-06-04</td><td>PNG</td><td><a href="additional%20funds%202.png">additional funds 2.png</a></td></tr>
+      <tr><td data-sort="1780608477">2026-06-04</td><td data-sort="1780608477">2026-06-04</td><td>PDF</td><td><a href="Reinstatment.pdf">Reinstatment.pdf</a></td></tr>
+      <tr><td data-sort="1780602642">2026-06-04</td><td data-sort="1780602642">2026-06-04</td><td>PNG</td><td><a href="db-clientinfo.png">db-clientinfo.png</a></td></tr>
+      <tr><td data-sort="1780602642">2026-06-04</td><td data-sort="1780602642">2026-06-04</td><td>PNG</td><td><a href="db-contactinfo.png">db-contactinfo.png</a></td></tr>
+      <tr><td data-sort="1780600301">2026-06-04</td><td data-sort="1780600301">2026-06-04</td><td>PNG</td><td><a href="db-client-info-1.png">db-client-info-1.png</a></td></tr>
+      <tr><td data-sort="1780600301">2026-06-04</td><td data-sort="1780600301">2026-06-04</td><td>PNG</td><td><a href="db-contact-info-1.png">db-contact-info-1.png</a></td></tr>
+      <tr><td data-sort="1780599673">2026-06-04</td><td data-sort="1780599673">2026-06-04</td><td>PNG</td><td><a href="db-client-info.png">db-client-info.png</a></td></tr>
+      <tr><td data-sort="1780599673">2026-06-04</td><td data-sort="1780599673">2026-06-04</td><td>PNG</td><td><a href="db-contact-info.png">db-contact-info.png</a></td></tr>
+      <tr><td data-sort="1780596158">2026-06-04</td><td data-sort="1780596158">2026-06-04</td><td>PNG</td><td><a href="green_white_checkmark.png">green_white_checkmark.png</a></td></tr>
+      <tr><td data-sort="1780590553">2026-06-04</td><td data-sort="1780590553">2026-06-04</td><td>PNG</td><td><a href="bizee-authentication-1.png">bizee-authentication-1.png</a></td></tr>
+      <tr><td data-sort="1780589738">2026-06-04</td><td data-sort="1780589738">2026-06-04</td><td>PNG</td><td><a href="bizee-agent%201.png">bizee-agent 1.png</a></td></tr>
+      <tr><td data-sort="1780589430">2026-06-04</td><td data-sort="1780589430">2026-06-04</td><td>PNG</td><td><a href="bizee-agent.png">bizee-agent.png</a></td></tr>
+      <tr><td data-sort="1780589430">2026-06-04</td><td data-sort="1780589430">2026-06-04</td><td>PNG</td><td><a href="bizee-authenticate.png">bizee-authenticate.png</a></td></tr>
+      <tr><td data-sort="1780587767">2026-06-04</td><td data-sort="1780587767">2026-06-04</td><td>PNG</td><td><a href="db-order-detail.png">db-order-detail.png</a></td></tr>
+      <tr><td data-sort="1780587767">2026-06-04</td><td data-sort="1780587767">2026-06-04</td><td>PNG</td><td><a href="db-search.png">db-search.png</a></td></tr>
+      <tr><td data-sort="1780587649">2026-06-04</td><td data-sort="1780587649">2026-06-04</td><td>PNG</td><td><a href="db-comments.png">db-comments.png</a></td></tr>
+      <tr><td data-sort="1780585450">2026-06-04</td><td data-sort="1780585450">2026-06-04</td><td>PNG</td><td><a href="glossary-annotations.png">glossary-annotations.png</a></td></tr>
+      <tr><td data-sort="1780585450">2026-06-04</td><td data-sort="1780585450">2026-06-04</td><td>PNG</td><td><a href="glossary-assignee.png">glossary-assignee.png</a></td></tr>
+      <tr><td data-sort="1780585450">2026-06-04</td><td data-sort="1780585450">2026-06-04</td><td>PNG</td><td><a href="glossary-cc.png">glossary-cc.png</a></td></tr>
+      <tr><td data-sort="1780585450">2026-06-04</td><td data-sort="1780585450">2026-06-04</td><td>PNG</td><td><a href="glossary-csat.png">glossary-csat.png</a></td></tr>
+      <tr><td data-sort="1780585450">2026-06-04</td><td data-sort="1780585450">2026-06-04</td><td>PNG</td><td><a href="glossary-escalation-box.png">glossary-escalation-box.png</a></td></tr>
+      <tr><td data-sort="1780585450">2026-06-04</td><td data-sort="1780585450">2026-06-04</td><td>PNG</td><td><a href="glossary-groups.png">glossary-groups.png</a></td></tr>
+      <tr><td data-sort="1780585450">2026-06-04</td><td data-sort="1780585450">2026-06-04</td><td>PNG</td><td><a href="glossary-internal-note.png">glossary-internal-note.png</a></td></tr>
+      <tr><td data-sort="1780585450">2026-06-04</td><td data-sort="1780585450">2026-06-04</td><td>PNG</td><td><a href="glossary-public-reply.png">glossary-public-reply.png</a></td></tr>
+      <tr><td data-sort="1780585450">2026-06-04</td><td data-sort="1780585450">2026-06-04</td><td>PNG</td><td><a href="glossary-requester.png">glossary-requester.png</a></td></tr>
+      <tr><td data-sort="1780585450">2026-06-04</td><td data-sort="1780585450">2026-06-04</td><td>PNG</td><td><a href="glossary-ticket.png">glossary-ticket.png</a></td></tr>
+      <tr><td data-sort="1780585450">2026-06-04</td><td data-sort="1780585450">2026-06-04</td><td>PNG</td><td><a href="glossary-user.png">glossary-user.png</a></td></tr>
+      <tr><td data-sort="1780585450">2026-06-04</td><td data-sort="1780585450">2026-06-04</td><td>GIF</td><td><a href="merge-one-ticket-into-yours.gif">merge-one-ticket-into-yours.gif</a></td></tr>
+      <tr><td data-sort="1780585450">2026-06-04</td><td data-sort="1780585450">2026-06-04</td><td>GIF</td><td><a href="merging-users.gif">merging-users.gif</a></td></tr>
+      <tr><td data-sort="1780585450">2026-06-04</td><td data-sort="1780585450">2026-06-04</td><td>GIF</td><td><a href="merging-various-tickets-from-the-same-user.gif">merging-various-tickets-from-the-same-user.gif</a></td></tr>
+      <tr><td data-sort="1780585450">2026-06-04</td><td data-sort="1780585450">2026-06-04</td><td>GIF</td><td><a href="merging-various-tickets-from-your-views.gif">merging-various-tickets-from-your-views.gif</a></td></tr>
+      <tr><td data-sort="1780526914">2026-06-03</td><td data-sort="1780526914">2026-06-03</td><td>PNG</td><td><a href="bizee-icon-reinstatement-states-1600x1408.png">bizee-icon-reinstatement-states-1600x1408.png</a></td></tr>
+      <tr><td data-sort="1780526673">2026-06-03</td><td data-sort="1780526673">2026-06-03</td><td>PNG</td><td><a href="bizee-icon-state-map-highlight-1600x1377.png">bizee-icon-state-map-highlight-1600x1377.png</a></td></tr>
+      <tr><td data-sort="1780525672">2026-06-03</td><td data-sort="1780525672">2026-06-03</td><td>PNG</td><td><a href="ticket-status-diagram-.png">ticket-status-diagram-.png</a></td></tr>
+      <tr><td data-sort="1780523011">2026-06-03</td><td data-sort="1780523011">2026-06-03</td><td>PNG</td><td><a href="ticket-status-diagram.png">ticket-status-diagram.png</a></td></tr>
+      <tr><td data-sort="1780522136">2026-06-03</td><td data-sort="1780522136">2026-06-03</td><td>PDF</td><td><a href="Foreign%20Qualification.pdf">Foreign Qualification.pdf</a></td></tr>
+      <tr><td data-sort="1780520829">2026-06-03</td><td data-sort="1780520829">2026-06-03</td><td>GIF</td><td><a href="ai-quick-answers.gif">ai-quick-answers.gif</a></td></tr>
+      <tr><td data-sort="1780520829">2026-06-03</td><td data-sort="1780520829">2026-06-03</td><td>GIF</td><td><a href="navigating-an-article.gif">navigating-an-article.gif</a></td></tr>
+      <tr><td data-sort="1780520142">2026-06-03</td><td data-sort="1780520142">2026-06-03</td><td>GIF</td><td><a href="ai-suggested-articles.gif">ai-suggested-articles.gif</a></td></tr>
+      <tr><td data-sort="1780520142">2026-06-03</td><td data-sort="1780520142">2026-06-03</td><td>GIF</td><td><a href="kb-article-search.gif">kb-article-search.gif</a></td></tr>
+      <tr><td data-sort="1780519810">2026-06-03</td><td data-sort="1780519810">2026-06-03</td><td>PDF</td><td><a href="Dissolution%20example.pdf">Dissolution example.pdf</a></td></tr>
+      <tr><td data-sort="1780519310">2026-06-03</td><td data-sort="1780519310">2026-06-03</td><td>PNG</td><td><a href="bizee-icon-dissolution-1024x1024.png">bizee-icon-dissolution-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780517688">2026-06-03</td><td data-sort="1780517688">2026-06-03</td><td>PNG</td><td><a href="bizee-icon-good-standing-1024x1024.png">bizee-icon-good-standing-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780514583">2026-06-03</td><td data-sort="1780514583">2026-06-03</td><td>PNG</td><td><a href="bizee-icon-registered-agent-change-1600x1000.png">bizee-icon-registered-agent-change-1600x1000.png</a></td></tr>
+      <tr><td data-sort="1780514327">2026-06-03</td><td data-sort="1780514327">2026-06-03</td><td>PDF</td><td><a href="Change%20of%20Agent%20file.pdf">Change of Agent file.pdf</a></td></tr>
+      <tr><td data-sort="1780514253">2026-06-03</td><td data-sort="1780514253">2026-06-03</td><td>PNG</td><td><a href="Registered%20Agent%20Selection%20on%20Dashboard.png">Registered Agent Selection on Dashboard.png</a></td></tr>
+      <tr><td data-sort="1780512638">2026-06-03</td><td data-sort="1780512638">2026-06-03</td><td>PNG</td><td><a href="Click.png">Click.png</a></td></tr>
+      <tr><td data-sort="1780512306">2026-06-03</td><td data-sort="1780512306">2026-06-03</td><td>PNG</td><td><a href="bizee-icon-state-oregon-1024x1024.png">bizee-icon-state-oregon-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780508127">2026-06-03</td><td data-sort="1780508127">2026-06-03</td><td>PNG</td><td><a href="bizee-icon-address-update-1024x1024.png">bizee-icon-address-update-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780507114">2026-06-03</td><td data-sort="1780507114">2026-06-03</td><td>GIF</td><td><a href="Check%20Internal%20Storage.gif">Check Internal Storage.gif</a></td></tr>
+      <tr><td data-sort="1780506378">2026-06-03</td><td data-sort="1780506378">2026-06-03</td><td>PNG</td><td><a href="Amendment%20not%20placed.png">Amendment not placed.png</a></td></tr>
+      <tr><td data-sort="1780506178">2026-06-03</td><td data-sort="1780506178">2026-06-03</td><td>PDF</td><td><a href="f8821.pdf">f8821.pdf</a></td></tr>
+      <tr><td data-sort="1780502452">2026-06-03</td><td data-sort="1780502452">2026-06-03</td><td>PNG</td><td><a href="Bottom%20Slip%20CP575.png">Bottom Slip CP575.png</a></td></tr>
+      <tr><td data-sort="1780502304">2026-06-03</td><td data-sort="1780502304">2026-06-03</td><td>JPEG</td><td><a href="EIN%20Bottom%20Slip.jpeg">EIN Bottom Slip.jpeg</a></td></tr>
+      <tr><td data-sort="1780502161">2026-06-03</td><td data-sort="1780502161">2026-06-03</td><td>PNG</td><td><a href="bizee-icon-reviewing-checklist-1024x1024.png">bizee-icon-reviewing-checklist-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780439323">2026-06-02</td><td data-sort="1780439323">2026-06-02</td><td>PDF</td><td><a href="CA%20SoI.pdf">CA SoI.pdf</a></td></tr>
+      <tr><td data-sort="1780439323">2026-06-02</td><td data-sort="1780439323">2026-06-02</td><td>PDF</td><td><a href="NY%20Biennial%20report.pdf">NY Biennial report.pdf</a></td></tr>
+      <tr><td data-sort="1780439323">2026-06-02</td><td data-sort="1780439323">2026-06-02</td><td>PDF</td><td><a href="TX%20PIFTR.pdf">TX PIFTR.pdf</a></td></tr>
+      <tr><td data-sort="1780427633">2026-06-02</td><td data-sort="1780427633">2026-06-02</td><td>PNG</td><td><a href="CP575.png">CP575.png</a></td></tr>
+      <tr><td data-sort="1780427633">2026-06-02</td><td data-sort="1780427633">2026-06-02</td><td>PNG</td><td><a href="CP575A.png">CP575A.png</a></td></tr>
+      <tr><td data-sort="1780427633">2026-06-02</td><td data-sort="1780427633">2026-06-02</td><td>PNG</td><td><a href="CP575G.png">CP575G.png</a></td></tr>
+      <tr><td data-sort="1780427555">2026-06-02</td><td data-sort="1780427555">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-state-red-utah-1024x1024.png">bizee-icon-state-red-utah-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780427387">2026-06-02</td><td data-sort="1780427387">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-state-arizona-1024x1024.png">bizee-icon-state-arizona-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780427387">2026-06-02</td><td data-sort="1780427387">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-state-delaware-1024x1024.png">bizee-icon-state-delaware-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780427387">2026-06-02</td><td data-sort="1780427387">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-state-florida-1024x1024.png">bizee-icon-state-florida-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780426488">2026-06-02</td><td data-sort="1780426488">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-state-north-dakota-1024x1024.png">bizee-icon-state-north-dakota-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780426488">2026-06-02</td><td data-sort="1780426488">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-state-pennsylvania-1024x1024.png">bizee-icon-state-pennsylvania-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780426488">2026-06-02</td><td data-sort="1780426488">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-state-south-dakota-1024x1024.png">bizee-icon-state-south-dakota-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780426488">2026-06-02</td><td data-sort="1780426488">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-state-utah-1024x1024.png">bizee-icon-state-utah-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780421057">2026-06-02</td><td data-sort="1780421057">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-chose-bizee-1024x1024.png">bizee-icon-chose-bizee-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780421057">2026-06-02</td><td data-sort="1780421057">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-declined-bizee-1024x1024.png">bizee-icon-declined-bizee-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780420988">2026-06-02</td><td data-sort="1780420988">2026-06-02</td><td>PNG</td><td><a href="147%20C.png">147 C.png</a></td></tr>
+      <tr><td data-sort="1780419885">2026-06-02</td><td data-sort="1780419885">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-form-8821-1024x1024.png">bizee-icon-form-8821-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780419885">2026-06-02</td><td data-sort="1780419885">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-form-ss4-1024x1024.png">bizee-icon-form-ss4-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780419885">2026-06-02</td><td data-sort="1780419885">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-letter-147c-1024x1024.png">bizee-icon-letter-147c-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780419885">2026-06-02</td><td data-sort="1780419885">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-notice-cp575-1024x1024.png">bizee-icon-notice-cp575-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780419816">2026-06-02</td><td data-sort="1780419816">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-responsible-party-1024x1024.png">bizee-icon-responsible-party-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780418965">2026-06-02</td><td data-sort="1780418965">2026-06-02</td><td>PDF</td><td><a href="EMPLOYER%20IDENTIFICATION%20NUMBER%208821.pdf">EMPLOYER IDENTIFICATION NUMBER 8821.pdf</a></td></tr>
+      <tr><td data-sort="1780418965">2026-06-02</td><td data-sort="1780418965">2026-06-02</td><td>PDF</td><td><a href="EMPLOYER%20IDENTIFICATION%20NUMBER%20ein.pdf">EMPLOYER IDENTIFICATION NUMBER ein.pdf</a></td></tr>
+      <tr><td data-sort="1780418965">2026-06-02</td><td data-sort="1780418965">2026-06-02</td><td>PNG</td><td><a href="EMPLOYER%20IDENTIFICATION%20NUMBER%20info.png">EMPLOYER IDENTIFICATION NUMBER info.png</a></td></tr>
+      <tr><td data-sort="1780418965">2026-06-02</td><td data-sort="1780418965">2026-06-02</td><td>PDF</td><td><a href="EMPLOYER%20IDENTIFICATION%20NUMBER%20SS4.pdf">EMPLOYER IDENTIFICATION NUMBER SS4.pdf</a></td></tr>
+      <tr><td data-sort="1780417129">2026-06-02</td><td data-sort="1780417129">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-reminder-1024x1024.png">bizee-icon-reminder-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780412641">2026-06-02</td><td data-sort="1780412641">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-state-california-1024x1024.png">bizee-icon-state-california-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780412641">2026-06-02</td><td data-sort="1780412641">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-state-new-york-1024x1024.png">bizee-icon-state-new-york-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780412641">2026-06-02</td><td data-sort="1780426488">2026-06-02</td><td>PNG</td><td><a href="bizee-icon-state-texas-1024x1024.png">bizee-icon-state-texas-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780412591">2026-06-02</td><td data-sort="1780412591">2026-06-02</td><td>PNG</td><td><a href="affiliate-program.png">affiliate-program.png</a></td></tr>
+      <tr><td data-sort="1780412591">2026-06-02</td><td data-sort="1780412591">2026-06-02</td><td>PNG</td><td><a href="entrepeneur-grant.png">entrepeneur-grant.png</a></td></tr>
+      <tr><td data-sort="1780412591">2026-06-02</td><td data-sort="1780412591">2026-06-02</td><td>PNG</td><td><a href="fresh-start-grant.png">fresh-start-grant.png</a></td></tr>
+      <tr><td data-sort="1780412591">2026-06-02</td><td data-sort="1780412591">2026-06-02</td><td>PNG</td><td><a href="ltv.png">ltv.png</a></td></tr>
+      <tr><td data-sort="1780411616">2026-06-02</td><td data-sort="1780411616">2026-06-02</td><td>PNG</td><td><a href="ASSUMED%20BUSINESS%20NAME%20%20DBA%20INFO.png">ASSUMED BUSINESS NAME  DBA INFO.png</a></td></tr>
+      <tr><td data-sort="1780411616">2026-06-02</td><td data-sort="1780411616">2026-06-02</td><td>PDF</td><td><a href="dba%20pdf.pdf">dba pdf.pdf</a></td></tr>
+      <tr><td data-sort="1780410065">2026-06-02</td><td data-sort="1780410065">2026-06-02</td><td>PDF</td><td><a href="2553%20PDF.pdf">2553 PDF.pdf</a></td></tr>
+      <tr><td data-sort="1780410065">2026-06-02</td><td data-sort="1780410065">2026-06-02</td><td>PNG</td><td><a href="FORM%202553%20info.png">FORM 2553 info.png</a></td></tr>
+      <tr><td data-sort="1780409426">2026-06-02</td><td data-sort="1780409426">2026-06-02</td><td>PNG</td><td><a href="BUSINESS%20CONTRACT%20TEMPLATES%20intro.png">BUSINESS CONTRACT TEMPLATES intro.png</a></td></tr>
+      <tr><td data-sort="1780354313">2026-06-01</td><td data-sort="1780354313">2026-06-01</td><td>PNG</td><td><a href="bizee-pro-ben.png">bizee-pro-ben.png</a></td></tr>
+      <tr><td data-sort="1780352433">2026-06-01</td><td data-sort="1780352433">2026-06-01</td><td>PNG</td><td><a href="commercial-clients.png">commercial-clients.png</a></td></tr>
+      <tr><td data-sort="1780351009">2026-06-01</td><td data-sort="1780351009">2026-06-01</td><td>PNG</td><td><a href="01%20Trademark%20Registration.png">01 Trademark Registration.png</a></td></tr>
+      <tr><td data-sort="1780351009">2026-06-01</td><td data-sort="1780351009">2026-06-01</td><td>PNG</td><td><a href="02%20Trademark%20Registration%20apple.png">02 Trademark Registration apple.png</a></td></tr>
+      <tr><td data-sort="1780351009">2026-06-01</td><td data-sort="1780351009">2026-06-01</td><td>PNG</td><td><a href="03%20Trademark%20Registration%20Jello.png">03 Trademark Registration Jello.png</a></td></tr>
+      <tr><td data-sort="1780351009">2026-06-01</td><td data-sort="1780351009">2026-06-01</td><td>PNG</td><td><a href="03%20Trademark%20Registration%20MC.png">03 Trademark Registration MC.png</a></td></tr>
+      <tr><td data-sort="1780351009">2026-06-01</td><td data-sort="1780351009">2026-06-01</td><td>PNG</td><td><a href="04%20Trademark%20Registration%20Nike.png">04 Trademark Registration Nike.png</a></td></tr>
+      <tr><td data-sort="1780350479">2026-06-01</td><td data-sort="1780350479">2026-06-01</td><td>PNG</td><td><a href="Refundable%20Late%20Fee.png">Refundable Late Fee.png</a></td></tr>
+      <tr><td data-sort="1780349742">2026-06-01</td><td data-sort="1780349742">2026-06-01</td><td>PNG</td><td><a href="tab-company-info.png">tab-company-info.png</a></td></tr>
+      <tr><td data-sort="1780349742">2026-06-01</td><td data-sort="1780349742">2026-06-01</td><td>PNG</td><td><a href="tab-completed-documents.png">tab-completed-documents.png</a></td></tr>
+      <tr><td data-sort="1780349742">2026-06-01</td><td data-sort="1780349742">2026-06-01</td><td>PNG</td><td><a href="tab-contract-templates.png">tab-contract-templates.png</a></td></tr>
+      <tr><td data-sort="1780349742">2026-06-01</td><td data-sort="1780349742">2026-06-01</td><td>PNG</td><td><a href="tab-order-history.png">tab-order-history.png</a></td></tr>
+      <tr><td data-sort="1780349742">2026-06-01</td><td data-sort="1780349742">2026-06-01</td><td>PNG</td><td><a href="tab-registered-agent.png">tab-registered-agent.png</a></td></tr>
+      <tr><td data-sort="1780349479">2026-06-01</td><td data-sort="1780349479">2026-06-01</td><td>PNG</td><td><a href="tab-virtual-mailbox.png">tab-virtual-mailbox.png</a></td></tr>
+      <tr><td data-sort="1780347490">2026-06-01</td><td data-sort="1780347490">2026-06-01</td><td>PNG</td><td><a href="bizee-icon-owner-chef-1024x1024.png">bizee-icon-owner-chef-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780347490">2026-06-01</td><td data-sort="1780347490">2026-06-01</td><td>PNG</td><td><a href="bizee-icon-owner-handyman-1024x1024.png">bizee-icon-owner-handyman-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780345974">2026-06-01</td><td data-sort="1780349742">2026-06-01</td><td>PNG</td><td><a href="tab-compliance.png">tab-compliance.png</a></td></tr>
+      <tr><td data-sort="1780345974">2026-06-01</td><td data-sort="1780345974">2026-06-01</td><td>PNG</td><td><a href="tab-my-tasks.png">tab-my-tasks.png</a></td></tr>
+      <tr><td data-sort="1780345974">2026-06-01</td><td data-sort="1780345974">2026-06-01</td><td>PNG</td><td><a href="tab-pending-issue.png">tab-pending-issue.png</a></td></tr>
+      <tr><td data-sort="1780345974">2026-06-01</td><td data-sort="1780345974">2026-06-01</td><td>PNG</td><td><a href="tab-recommendations.png">tab-recommendations.png</a></td></tr>
+      <tr><td data-sort="1780342878">2026-06-01</td><td data-sort="1780342878">2026-06-01</td><td>PDF</td><td><a href="License%20Research%20Package.pdf">License Research Package.pdf</a></td></tr>
+      <tr><td data-sort="1780341024">2026-06-01</td><td data-sort="1780341024">2026-06-01</td><td>PNG</td><td><a href="01%20BUSINESS%20LICENSE%20RESEARCH%20PACKAGE%20%20What%20is.png">01 BUSINESS LICENSE RESEARCH PACKAGE  What is.png</a></td></tr>
+      <tr><td data-sort="1780341024">2026-06-01</td><td data-sort="1780341024">2026-06-01</td><td>PNG</td><td><a href="02%20BUSINESS%20LICENSE%20RESEARCH%20PACKAGE%20example%20part%201.png">02 BUSINESS LICENSE RESEARCH PACKAGE example part 1.png</a></td></tr>
+      <tr><td data-sort="1780341024">2026-06-01</td><td data-sort="1780341024">2026-06-01</td><td>PNG</td><td><a href="03%20BUSINESS%20LICENSE%20RESEARCH%20PACKAGE%20example%20part%202.png">03 BUSINESS LICENSE RESEARCH PACKAGE example part 2.png</a></td></tr>
+      <tr><td data-sort="1780341024">2026-06-01</td><td data-sort="1780341024">2026-06-01</td><td>PNG</td><td><a href="04%20BUSINESS%20LICENSE%20RESEARCH%20PACKAGE%20example%20part%203.png">04 BUSINESS LICENSE RESEARCH PACKAGE example part 3.png</a></td></tr>
+      <tr><td data-sort="1780341024">2026-06-01</td><td data-sort="1780341024">2026-06-01</td><td>PNG</td><td><a href="05%20BUSINESS%20LICENSE%20RESEARCH%20PACKAGE%20Restaurant%20Owner.png">05 BUSINESS LICENSE RESEARCH PACKAGE Restaurant Owner.png</a></td></tr>
+      <tr><td data-sort="1780341024">2026-06-01</td><td data-sort="1780341024">2026-06-01</td><td>PNG</td><td><a href="06%20BUSINESS%20LICENSE%20RESEARCH%20PACKAGE%20handman%20services.png">06 BUSINESS LICENSE RESEARCH PACKAGE handman services.png</a></td></tr>
+      <tr><td data-sort="1780339321">2026-06-01</td><td data-sort="1780339321">2026-06-01</td><td>PNG</td><td><a href="single-view-section-breakdown.png">single-view-section-breakdown.png</a></td></tr>
+      <tr><td data-sort="1780339109">2026-06-01</td><td data-sort="1780339109">2026-06-01</td><td>PNG</td><td><a href="singleview-section-breakdown.png">singleview-section-breakdown.png</a></td></tr>
+      <tr><td data-sort="1780337853">2026-06-01</td><td data-sort="1780337853">2026-06-01</td><td>PNG</td><td><a href="multiview-section-breakdown.png">multiview-section-breakdown.png</a></td></tr>
+      <tr><td data-sort="1780337853">2026-06-01</td><td data-sort="1780337853">2026-06-01</td><td>PNG</td><td><a href="multiview-sections.png">multiview-sections.png</a></td></tr>
+      <tr><td data-sort="1780336347">2026-06-01</td><td data-sort="1780336347">2026-06-01</td><td>GIF</td><td><a href="Happy%20Birthday%20Rainbow%20Sticker.gif">Happy Birthday Rainbow Sticker.gif</a></td></tr>
+      <tr><td data-sort="1780335818">2026-06-01</td><td data-sort="1780335818">2026-06-01</td><td>GIF</td><td><a href="completion%20confetti%20gif.gif">completion confetti gif.gif</a></td></tr>
+      <tr><td data-sort="1780335310">2026-06-01</td><td data-sort="1780501230">2026-06-03</td><td>PNG</td><td><a href="Dashboard-sections.png">Dashboard-sections.png</a></td></tr>
+      <tr><td data-sort="1780330503">2026-06-01</td><td data-sort="1780330503">2026-06-01</td><td>GIF</td><td><a href="dashboard-navigation.gif">dashboard-navigation.gif</a></td></tr>
+      <tr><td data-sort="1780330214">2026-06-01</td><td data-sort="1780498633">2026-06-03</td><td>PNG</td><td><a href="Business%20Formation%20KIT%20items.png">Business Formation KIT items.png</a></td></tr>
+      <tr><td data-sort="1780330076">2026-06-01</td><td data-sort="1780330076">2026-06-01</td><td>PNG</td><td><a href="Screenshot%202026-06-01%20100652.png">Screenshot 2026-06-01 100652.png</a></td></tr>
+      <tr><td data-sort="1780329970">2026-06-01</td><td data-sort="1780329970">2026-06-01</td><td>PNG</td><td><a href="dashboard-w-sections.png">dashboard-w-sections.png</a></td></tr>
+      <tr><td data-sort="1780327184">2026-06-01</td><td data-sort="1780334979">2026-06-01</td><td>PNG</td><td><a href="dashboard-sections-.png">dashboard-sections-.png</a></td></tr>
+      <tr><td data-sort="1780327106">2026-06-01</td><td data-sort="1780327106">2026-06-01</td><td>PNG</td><td><a href="dashboard-sections.png">dashboard-sections.png</a></td></tr>
+      <tr><td data-sort="1780327106">2026-06-01</td><td data-sort="1780327106">2026-06-01</td><td>PNG</td><td><a href="dashboard.png">dashboard.png</a></td></tr>
+      <tr><td data-sort="1780092876">2026-05-29</td><td data-sort="1780092876">2026-05-29</td><td>PNG</td><td><a href="Billing%20Team.png">Billing Team.png</a></td></tr>
+      <tr><td data-sort="1780092876">2026-05-29</td><td data-sort="1780092876">2026-05-29</td><td>PNG</td><td><a href="Customer%20Service.png">Customer Service.png</a></td></tr>
+      <tr><td data-sort="1780092876">2026-05-29</td><td data-sort="1780092876">2026-05-29</td><td>PNG</td><td><a href="Filing%20Team.png">Filing Team.png</a></td></tr>
+      <tr><td data-sort="1780092876">2026-05-29</td><td data-sort="1780092876">2026-05-29</td><td>PNG</td><td><a href="State%20Rejection.png">State Rejection.png</a></td></tr>
+      <tr><td data-sort="1780092833">2026-05-29</td><td data-sort="1780092833">2026-05-29</td><td>PNG</td><td><a href="Customer%20Initiated.png">Customer Initiated.png</a></td></tr>
+      <tr><td data-sort="1780091771">2026-05-29</td><td data-sort="1780091771">2026-05-29</td><td>PNG</td><td><a href="BOA%20Offer.png">BOA Offer.png</a></td></tr>
+      <tr><td data-sort="1780090564">2026-05-29</td><td data-sort="1780090564">2026-05-29</td><td>PNG</td><td><a href="CONFIRMATION%20AZ.png">CONFIRMATION AZ.png</a></td></tr>
+      <tr><td data-sort="1780089779">2026-05-29</td><td data-sort="1780089779">2026-05-29</td><td>GIF</td><td><a href="Forwarded%3AReceipt.gif">Forwarded:Receipt.gif</a></td></tr>
+      <tr><td data-sort="1780089279">2026-05-29</td><td data-sort="1780089279">2026-05-29</td><td>GIF</td><td><a href="Processing.gif">Processing.gif</a></td></tr>
+      <tr><td data-sort="1780087388">2026-05-29</td><td data-sort="1780087388">2026-05-29</td><td>PNG</td><td><a href="Order%20in%20Processing.png">Order in Processing.png</a></td></tr>
+      <tr><td data-sort="1780087388">2026-05-29</td><td data-sort="1780087388">2026-05-29</td><td>PNG</td><td><a href="Order%20in%20Review.png">Order in Review.png</a></td></tr>
+      <tr><td data-sort="1780077790">2026-05-29</td><td data-sort="1780077790">2026-05-29</td><td>PNG</td><td><a href="bizee-icon-topic-complete-cutout-1024x1024.png">bizee-icon-topic-complete-cutout-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1780073769">2026-05-29</td><td data-sort="1780073769">2026-05-29</td><td>GIF</td><td><a href="New%20Dashboard%20.gif">New Dashboard .gif</a></td></tr>
+      <tr><td data-sort="1780070459">2026-05-29</td><td data-sort="1780070459">2026-05-29</td><td>PDF</td><td><a href="order-review-223102174577.pdf">order-review-223102174577.pdf</a></td></tr>
+      <tr><td data-sort="1780069223">2026-05-29</td><td data-sort="1780069223">2026-05-29</td><td>PNG</td><td><a href="Customer%20can%27t%20edit.png">Customer can&#x27;t edit.png</a></td></tr>
+      <tr><td data-sort="1780069223">2026-05-29</td><td data-sort="1780069223">2026-05-29</td><td>PNG</td><td><a href="Customer%20Dashboard.png">Customer Dashboard.png</a></td></tr>
+      <tr><td data-sort="1780069223">2026-05-29</td><td data-sort="1780069223">2026-05-29</td><td>PNG</td><td><a href="No%20Changes%20Allowed.png">No Changes Allowed.png</a></td></tr>
+      <tr><td data-sort="1780069223">2026-05-29</td><td data-sort="1780069223">2026-05-29</td><td>PNG</td><td><a href="Order%20Confirmation%20Email.png">Order Confirmation Email.png</a></td></tr>
+      <tr><td data-sort="1780069223">2026-05-29</td><td data-sort="1780069223">2026-05-29</td><td>PNG</td><td><a href="Order%20with%20filing.png">Order with filing.png</a></td></tr>
+      <tr><td data-sort="1780069223">2026-05-29</td><td data-sort="1780069223">2026-05-29</td><td>PNG</td><td><a href="Sent%20to%20the%20state%20.png">Sent to the state .png</a></td></tr>
+      <tr><td data-sort="1780069223">2026-05-29</td><td data-sort="1780069223">2026-05-29</td><td>PNG</td><td><a href="Uploaded%20Documents%20.png">Uploaded Documents .png</a></td></tr>
+      <tr><td data-sort="1780069129">2026-05-29</td><td data-sort="1780069129">2026-05-29</td><td>PNG</td><td><a href="State%20Approval%20.png">State Approval .png</a></td></tr>
+      <tr><td data-sort="1780066277">2026-05-29</td><td data-sort="1780066277">2026-05-29</td><td>PNG</td><td><a href="Order%20lifecycle%20.png">Order lifecycle .png</a></td></tr>
+      <tr><td data-sort="1780062207">2026-05-29</td><td data-sort="1780062207">2026-05-29</td><td>PNG</td><td><a href="bizee-icon-NAICS-1600x800%20%281%29.png">bizee-icon-NAICS-1600x800 (1).png</a></td></tr>
+      <tr><td data-sort="1780009272">2026-05-28</td><td data-sort="1780009272">2026-05-28</td><td>PNG</td><td><a href="cr-misc-orders.png">cr-misc-orders.png</a></td></tr>
+      <tr><td data-sort="1780009206">2026-05-28</td><td data-sort="1780009206">2026-05-28</td><td>PNG</td><td><a href="cr-special-scenarios.png">cr-special-scenarios.png</a></td></tr>
+      <tr><td data-sort="1780006483">2026-05-28</td><td data-sort="1780006483">2026-05-28</td><td>GIF</td><td><a href="dashboard-login.gif">dashboard-login.gif</a></td></tr>
+      <tr><td data-sort="1780006397">2026-05-28</td><td data-sort="1780006397">2026-05-28</td><td>PNG</td><td><a href="bizee-login-code.png">bizee-login-code.png</a></td></tr>
+      <tr><td data-sort="1780004022">2026-05-28</td><td data-sort="1780004022">2026-05-28</td><td>PNG</td><td><a href="Texas_Comptroller_Revenue_Threshold.png">Texas_Comptroller_Revenue_Threshold.png</a></td></tr>
+      <tr><td data-sort="1780004022">2026-05-28</td><td data-sort="1780004022">2026-05-28</td><td>PNG</td><td><a href="Texas_Comptroller_webfile_number.png">Texas_Comptroller_webfile_number.png</a></td></tr>
+      <tr><td data-sort="1779996150">2026-05-28</td><td data-sort="1779996150">2026-05-28</td><td>PDF</td><td><a href="Banking%20Res.pdf">Banking Res.pdf</a></td></tr>
+      <tr><td data-sort="1779995054">2026-05-28</td><td data-sort="1779995054">2026-05-28</td><td>PNG</td><td><a href="bizee-icon-banking-resolution-1024x1024.png">bizee-icon-banking-resolution-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779994472">2026-05-28</td><td data-sort="1779994472">2026-05-28</td><td>GIF</td><td><a href="c%26r-va-alone.gif">c&amp;r-va-alone.gif</a></td></tr>
+      <tr><td data-sort="1779989557">2026-05-28</td><td data-sort="1779989557">2026-05-28</td><td>GIF</td><td><a href="c%26r-BOIR.gif">c&amp;r-BOIR.gif</a></td></tr>
+      <tr><td data-sort="1779988953">2026-05-28</td><td data-sort="1779988953">2026-05-28</td><td>GIF</td><td><a href="c%26r-business-templates.gif">c&amp;r-business-templates.gif</a></td></tr>
+      <tr><td data-sort="1779987573">2026-05-28</td><td data-sort="1779987573">2026-05-28</td><td>GIF</td><td><a href="c%26r-2553.gif">c&amp;r-2553.gif</a></td></tr>
+      <tr><td data-sort="1779987573">2026-05-28</td><td data-sort="1779987573">2026-05-28</td><td>PNG</td><td><a href="optout-2553.png">optout-2553.png</a></td></tr>
+      <tr><td data-sort="1779986693">2026-05-28</td><td data-sort="1779986693">2026-05-28</td><td>GIF</td><td><a href="EIN-only.gif">EIN-only.gif</a></td></tr>
+      <tr><td data-sort="1779985927">2026-05-28</td><td data-sort="1779985927">2026-05-28</td><td>GIF</td><td><a href="EIN-partial-refund.gif">EIN-partial-refund.gif</a></td></tr>
+      <tr><td data-sort="1779984523">2026-05-28</td><td data-sort="1780009171">2026-05-28</td><td>PNG</td><td><a href="cr-specials.png">cr-specials.png</a></td></tr>
+      <tr><td data-sort="1779924306">2026-05-27</td><td data-sort="1779924306">2026-05-27</td><td>PDF</td><td><a href="Corporate%20Bylaws.pdf">Corporate Bylaws.pdf</a></td></tr>
+      <tr><td data-sort="1779924306">2026-05-27</td><td data-sort="1779924306">2026-05-27</td><td>PDF</td><td><a href="Meeting%20Minutes.pdf">Meeting Minutes.pdf</a></td></tr>
+      <tr><td data-sort="1779924306">2026-05-27</td><td data-sort="1779924306">2026-05-27</td><td>PDF</td><td><a href="Opperating%20Agreement.pdf">Opperating Agreement.pdf</a></td></tr>
+      <tr><td data-sort="1779923116">2026-05-27</td><td data-sort="1779923116">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-operating-agreement.png">bizee-icon-operating-agreement.png</a></td></tr>
+      <tr><td data-sort="1779922695">2026-05-27</td><td data-sort="1779922695">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-corporate-bylaws-1024x1024.png">bizee-icon-corporate-bylaws-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779922695">2026-05-27</td><td data-sort="1779922695">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-meeting-minutes-1024x1024.png">bizee-icon-meeting-minutes-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779922695">2026-05-27</td><td data-sort="1779922695">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-operating-agreement-1024x1024.png">bizee-icon-operating-agreement-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779921764">2026-05-27</td><td data-sort="1779921764">2026-05-27</td><td>PNG</td><td><a href="SFB%26AR-cancel.png">SFB&amp;AR-cancel.png</a></td></tr>
+      <tr><td data-sort="1779921368">2026-05-27</td><td data-sort="1779921368">2026-05-27</td><td>GIF</td><td><a href="c%26r-miscorder.gif">c&amp;r-miscorder.gif</a></td></tr>
+      <tr><td data-sort="1779919909">2026-05-27</td><td data-sort="1779919909">2026-05-27</td><td>PNG</td><td><a href="misc-hold.png">misc-hold.png</a></td></tr>
+      <tr><td data-sort="1779919909">2026-05-27</td><td data-sort="1779919909">2026-05-27</td><td>PNG</td><td><a href="misc-noc%26r.png">misc-noc&amp;r.png</a></td></tr>
+      <tr><td data-sort="1779916666">2026-05-27</td><td data-sort="1780008983">2026-05-28</td><td>PNG</td><td><a href="cr-misc-order.png">cr-misc-order.png</a></td></tr>
+      <tr><td data-sort="1779912380">2026-05-27</td><td data-sort="1779912380">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-shareholders-1600x1000.png">bizee-icon-shareholders-1600x1000.png</a></td></tr>
+      <tr><td data-sort="1779908142">2026-05-27</td><td data-sort="1779908142">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-company-owner-1024x1024.png">bizee-icon-company-owner-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779908142">2026-05-27</td><td data-sort="1779908142">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-holding-company-1024x1024.png">bizee-icon-holding-company-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779908142">2026-05-27</td><td data-sort="1779908142">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-individual-owner-1024x1024.png">bizee-icon-individual-owner-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779908142">2026-05-27</td><td data-sort="1779908142">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-umbrella-company-1024x1024.png">bizee-icon-umbrella-company-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779908075">2026-05-27</td><td data-sort="1779908075">2026-05-27</td><td>PNG</td><td><a href="C%26R%20Main%20Order.png">C&amp;R Main Order.png</a></td></tr>
+      <tr><td data-sort="1779906886">2026-05-27</td><td data-sort="1779906886">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-vehicle-title-transfer-1600x1000.png">bizee-icon-vehicle-title-transfer-1600x1000.png</a></td></tr>
+      <tr><td data-sort="1779905963">2026-05-27</td><td data-sort="1779905963">2026-05-27</td><td>PDF</td><td><a href="Analogy%20Amendment.pdf">Analogy Amendment.pdf</a></td></tr>
+      <tr><td data-sort="1779905963">2026-05-27</td><td data-sort="1779905963">2026-05-27</td><td>PDF</td><td><a href="Analogy%20Articles.pdf">Analogy Articles.pdf</a></td></tr>
+      <tr><td data-sort="1779904541">2026-05-27</td><td data-sort="1779904541">2026-05-27</td><td>GIF</td><td><a href="main-order-cancellation.gif">main-order-cancellation.gif</a></td></tr>
+      <tr><td data-sort="1779904541">2026-05-27</td><td data-sort="1779904541">2026-05-27</td><td>GIF</td><td><a href="service-cancellation.gif">service-cancellation.gif</a></td></tr>
+      <tr><td data-sort="1779904498">2026-05-27</td><td data-sort="1779904498">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-vehicle-title-receive-1600x1000.png">bizee-icon-vehicle-title-receive-1600x1000.png</a></td></tr>
+      <tr><td data-sort="1779904498">2026-05-27</td><td data-sort="1779906844">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-vehicle-title-sell-1600x1000.png">bizee-icon-vehicle-title-sell-1600x1000.png</a></td></tr>
+      <tr><td data-sort="1779903832">2026-05-27</td><td data-sort="1779903832">2026-05-27</td><td>PNG</td><td><a href="FedEx%20Option.png">FedEx Option.png</a></td></tr>
+      <tr><td data-sort="1779903360">2026-05-27</td><td data-sort="1779903360">2026-05-27</td><td>PNG</td><td><a href="green-checkmark.png">green-checkmark.png</a></td></tr>
+      <tr><td data-sort="1779903346">2026-05-27</td><td data-sort="1779903346">2026-05-27</td><td>GIF</td><td><a href="Completed%20Docs.gif">Completed Docs.gif</a></td></tr>
+      <tr><td data-sort="1779902455">2026-05-27</td><td data-sort="1779902455">2026-05-27</td><td>PNG</td><td><a href="Articles%20of%20Incorporation.png">Articles of Incorporation.png</a></td></tr>
+      <tr><td data-sort="1779902455">2026-05-27</td><td data-sort="1779902455">2026-05-27</td><td>PNG</td><td><a href="Articles%20of%20Organization.png">Articles of Organization.png</a></td></tr>
+      <tr><td data-sort="1779901645">2026-05-27</td><td data-sort="1779901645">2026-05-27</td><td>PDF</td><td><a href="Art.%20of%20Incorporation.pdf">Art. of Incorporation.pdf</a></td></tr>
+      <tr><td data-sort="1779901645">2026-05-27</td><td data-sort="1779901645">2026-05-27</td><td>PDF</td><td><a href="Art.%20of%20Organization.pdf">Art. of Organization.pdf</a></td></tr>
+      <tr><td data-sort="1779897378">2026-05-27</td><td data-sort="1779897378">2026-05-27</td><td>PNG</td><td><a href="sfb-order.png">sfb-order.png</a></td></tr>
+      <tr><td data-sort="1779896406">2026-05-27</td><td data-sort="1779896406">2026-05-27</td><td>PNG</td><td><a href="mail-handling-diagram.png">mail-handling-diagram.png</a></td></tr>
+      <tr><td data-sort="1779895993">2026-05-27</td><td data-sort="1779895993">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-annual-reports-1600x1143.png">bizee-icon-annual-reports-1600x1143.png</a></td></tr>
+      <tr><td data-sort="1779895993">2026-05-27</td><td data-sort="1779895993">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-state-business-environment-1600x1143.png">bizee-icon-state-business-environment-1600x1143.png</a></td></tr>
+      <tr><td data-sort="1779895993">2026-05-27</td><td data-sort="1779895993">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-state-filing-fees-1600x1143.png">bizee-icon-state-filing-fees-1600x1143.png</a></td></tr>
+      <tr><td data-sort="1779895993">2026-05-27</td><td data-sort="1779895993">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-state-taxes-1600x1143.png">bizee-icon-state-taxes-1600x1143.png</a></td></tr>
+      <tr><td data-sort="1779892418">2026-05-27</td><td data-sort="1779892418">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-pro-tip-callout-1024x1024.png">bizee-icon-pro-tip-callout-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779890987">2026-05-27</td><td data-sort="1779890987">2026-05-27</td><td>PNG</td><td><a href="bizee-icon-profitable-small-business-1024x1024%20%281%29.png">bizee-icon-profitable-small-business-1024x1024 (1).png</a></td></tr>
+      <tr><td data-sort="1779828488">2026-05-26</td><td data-sort="1779828488">2026-05-26</td><td>PNG</td><td><a href="Stop-Red.png">Stop-Red.png</a></td></tr>
+      <tr><td data-sort="1779822783">2026-05-26</td><td data-sort="1779822783">2026-05-26</td><td>PNG</td><td><a href="bizee-icon-board1600x1000%20%281%29.png">bizee-icon-board1600x1000 (1).png</a></td></tr>
+      <tr><td data-sort="1779822604">2026-05-26</td><td data-sort="1779822604">2026-05-26</td><td>PNG</td><td><a href="RA%20Mail%20Handling%20Process.png">RA Mail Handling Process.png</a></td></tr>
+      <tr><td data-sort="1779822522">2026-05-26</td><td data-sort="1779822522">2026-05-26</td><td>PNG</td><td><a href="bizee-icon-president-secretary-treasurer-1600x1000.png">bizee-icon-president-secretary-treasurer-1600x1000.png</a></td></tr>
+      <tr><td data-sort="1779822482">2026-05-26</td><td data-sort="1779822482">2026-05-26</td><td>PNG</td><td><a href="bizee-icon-board-of-directors-1600x1000.png">bizee-icon-board-of-directors-1600x1000.png</a></td></tr>
+      <tr><td data-sort="1779817168">2026-05-26</td><td data-sort="1779817168">2026-05-26</td><td>PNG</td><td><a href="Red%20Warning.png">Red Warning.png</a></td></tr>
+      <tr><td data-sort="1779816494">2026-05-26</td><td data-sort="1779816494">2026-05-26</td><td>PNG</td><td><a href="Warning-Yellow-Fake.png">Warning-Yellow-Fake.png</a></td></tr>
+      <tr><td data-sort="1779813219">2026-05-26</td><td data-sort="1779813219">2026-05-26</td><td>PNG</td><td><a href="Warning-Blue.png">Warning-Blue.png</a></td></tr>
+      <tr><td data-sort="1779812463">2026-05-26</td><td data-sort="1779812463">2026-05-26</td><td>PNG</td><td><a href="bizee-icon-pro-tip-1024x1024.png">bizee-icon-pro-tip-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779811998">2026-05-26</td><td data-sort="1779811998">2026-05-26</td><td>PNG</td><td><a href="SL.png">SL.png</a></td></tr>
+      <tr><td data-sort="1779809517">2026-05-26</td><td data-sort="1779809930">2026-05-26</td><td>PNG</td><td><a href="USPS%20Form%201583.png">USPS Form 1583.png</a></td></tr>
+      <tr><td data-sort="1779809265">2026-05-26</td><td data-sort="1779809265">2026-05-26</td><td>PNG</td><td><a href="bizee-icon-profitable-small-business-1024x1024.png">bizee-icon-profitable-small-business-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779393282">2026-05-21</td><td data-sort="1779393282">2026-05-21</td><td>PNG</td><td><a href="bizee-icon-small-businesses-1024x1024.png">bizee-icon-small-businesses-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779393282">2026-05-21</td><td data-sort="1779393282">2026-05-21</td><td>PNG</td><td><a href="bizee-icon-solopreneurs-1024x1024.png">bizee-icon-solopreneurs-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779393282">2026-05-21</td><td data-sort="1779393282">2026-05-21</td><td>PNG</td><td><a href="bizee-icon-startups-flexible-1024x1024.png">bizee-icon-startups-flexible-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779391899">2026-05-21</td><td data-sort="1779391899">2026-05-21</td><td>PNG</td><td><a href="bizee-icon-formal-governance-1024x1024.png">bizee-icon-formal-governance-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779391899">2026-05-21</td><td data-sort="1779391899">2026-05-21</td><td>PNG</td><td><a href="bizee-icon-issue-stock-1024x1024.png">bizee-icon-issue-stock-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779391899">2026-05-21</td><td data-sort="1779391899">2026-05-21</td><td>PNG</td><td><a href="bizee-icon-raise-capital-1024x1024.png">bizee-icon-raise-capital-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779391899">2026-05-21</td><td data-sort="1779391899">2026-05-21</td><td>PNG</td><td><a href="bizee-icon-scale-go-public-1024x1024.png">bizee-icon-scale-go-public-1024x1024.png</a></td></tr>
+      <tr><td data-sort="1779389106">2026-05-21</td><td data-sort="1779389106">2026-05-21</td><td>PNG</td><td><a href="bizee-icon-C-Corp-1600x800%20%281%29.png">bizee-icon-C-Corp-1600x800 (1).png</a></td></tr>
+      <tr><td data-sort="1779387537">2026-05-21</td><td data-sort="1779387537">2026-05-21</td><td>PNG</td><td><a href="bizee-icon-C-Corp-1600x800.png">bizee-icon-C-Corp-1600x800.png</a></td></tr>
+      <tr><td data-sort="1779387285">2026-05-21</td><td data-sort="1779387285">2026-05-21</td><td>PNG</td><td><a href="bizee-icon-S-Corp-1600x800.png">bizee-icon-S-Corp-1600x800.png</a></td></tr>
+      <tr><td data-sort="1779384732">2026-05-21</td><td data-sort="1779384732">2026-05-21</td><td>PNG</td><td><a href="bizee-icon-LLC-1600x800.png">bizee-icon-LLC-1600x800.png</a></td></tr>
+      <tr><td data-sort="1779384732">2026-05-21</td><td data-sort="1779384732">2026-05-21</td><td>PNG</td><td><a href="bizee-icon-Nonprofit-1600x800.png">bizee-icon-Nonprofit-1600x800.png</a></td></tr>
+      <tr><td data-sort="1779383123">2026-05-21</td><td data-sort="1779383123">2026-05-21</td><td>PNG</td><td><a href="bizee-icon-charitable-educational-A-1024.png">bizee-icon-charitable-educational-A-1024.png</a></td></tr>
+      <tr><td data-sort="1779383123">2026-05-21</td><td data-sort="1779383123">2026-05-21</td><td>PNG</td><td><a href="bizee-icon-public-benefit-A-1024.png">bizee-icon-public-benefit-A-1024.png</a></td></tr>
+      <tr><td data-sort="1779383123">2026-05-21</td><td data-sort="1779383123">2026-05-21</td><td>PNG</td><td><a href="bizee-icon-religious-A-1024.png">bizee-icon-religious-A-1024.png</a></td></tr>
+      <tr><td data-sort="1779381661">2026-05-21</td><td data-sort="1779817094">2026-05-26</td><td>PNG</td><td><a href="Warning-Red.png">Warning-Red.png</a></td></tr>
+      <tr><td data-sort="1779291732">2026-05-20</td><td data-sort="1779291732">2026-05-20</td><td>PNG</td><td><a href="Alert-Yellow.png">Alert-Yellow.png</a></td></tr>
+      <tr><td data-sort="1778113604">2026-05-06</td><td data-sort="1778113604">2026-05-06</td><td>PNG</td><td><a href="Cancel%20%26%20Refund%20Rules%20Flowchart.png">Cancel &amp; Refund Rules Flowchart.png</a></td></tr>
+      <tr><td data-sort="1778113395">2026-05-06</td><td data-sort="1778113395">2026-05-06</td><td>PNG</td><td><a href="EIN%20Section.png">EIN Section.png</a></td></tr>
+      <tr><td data-sort="1778082300">2026-05-06</td><td data-sort="1778082300">2026-05-06</td><td>PNG</td><td><a href="Duplicate%20phone%20%23%20Cx.png">Duplicate phone # Cx.png</a></td></tr>
+      <tr><td data-sort="1778082300">2026-05-06</td><td data-sort="1778082300">2026-05-06</td><td>PNG</td><td><a href="No%20name%20Cx.png">No name Cx.png</a></td></tr>
+      <tr><td data-sort="1778082300">2026-05-06</td><td data-sort="1778082300">2026-05-06</td><td>PNG</td><td><a href="Outdated%20email%20Cx.png">Outdated email Cx.png</a></td></tr>
+      <tr><td data-sort="1778009663">2026-05-05</td><td data-sort="1778009663">2026-05-05</td><td>PNG</td><td><a href="C%20%26%20R%20Flowchart.png">C &amp; R Flowchart.png</a></td></tr>
+      <tr><td data-sort="1778001425">2026-05-05</td><td data-sort="1778001425">2026-05-05</td><td>PNG</td><td><a href="RA%20Price%20Increase.png">RA Price Increase.png</a></td></tr>
+      <tr><td data-sort="1777998182">2026-05-05</td><td data-sort="1777998182">2026-05-05</td><td>PNG</td><td><a href="Bundle%20AR.png">Bundle AR.png</a></td></tr>
+      <tr><td data-sort="1777998182">2026-05-05</td><td data-sort="1777998182">2026-05-05</td><td>PNG</td><td><a href="No%20Bundle%20AR.png">No Bundle AR.png</a></td></tr>
+      <tr><td data-sort="1777995877">2026-05-05</td><td data-sort="1777995877">2026-05-05</td><td>PNG</td><td><a href="AR%20C%26R%20Confirmation.png">AR C&amp;R Confirmation.png</a></td></tr>
+      <tr><td data-sort="1777994932">2026-05-05</td><td data-sort="1777994932">2026-05-05</td><td>PNG</td><td><a href="AR%20Checkout%20options.png">AR Checkout options.png</a></td></tr>
+    </tbody>
+  </table>
+
+  <script>
+    function filterTable() {
+      const filter = document.getElementById("search").value.toLowerCase();
+      const rows = document.querySelectorAll("#assetTable tbody tr");
+
+      rows.forEach(row => {
+        row.style.display = row.innerText.toLowerCase().includes(filter) ? "" : "none";
+      });
+    }
+
+    function sortTable(columnIndex) {
+      const table = document.getElementById("assetTable");
+      const tbody = table.tBodies[0];
+      const rows = Array.from(tbody.rows);
+      const currentDirection = table.getAttribute("data-sort-dir") || "desc";
+      const nextDirection = currentDirection === "asc" ? "desc" : "asc";
+
+      rows.sort((a, b) => {
+        const aCell = a.cells[columnIndex];
+        const bCell = b.cells[columnIndex];
+
+        const aValue = aCell.getAttribute("data-sort") || aCell.innerText.toLowerCase();
+        const bValue = bCell.getAttribute("data-sort") || bCell.innerText.toLowerCase();
+
+        if (!isNaN(aValue) && !isNaN(bValue)) {
+          return nextDirection === "asc" ? aValue - bValue : bValue - aValue;
+        }
+
+        return nextDirection === "asc"
+          ? aValue.localeCompare(bValue)
+          : bValue.localeCompare(aValue);
+      });
+
+      rows.forEach(row => tbody.appendChild(row));
+      table.setAttribute("data-sort-dir", nextDirection);
+    }
+  </script>
+</body>
+</html>
