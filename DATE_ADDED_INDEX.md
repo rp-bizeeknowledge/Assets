@@ -4,6 +4,8 @@ Newest files first. Links are automatically updated from Git history.
 
 | Date Added | Last Updated | Type | File |
 |---|---|---|---|
+| 2026-06-08 | 2026-06-08 | PNG | [bizee-icon-virtual-address-business-1024x1024.png](bizee-icon-virtual-address-business-1024x1024.png) |
+| 2026-06-08 | 2026-06-08 | PNG | [bizee-icon-virtual-address-personal-1024x1024.png](bizee-icon-virtual-address-personal-1024x1024.png) |
 | 2026-06-08 | 2026-06-08 | File | [.DS_Store](.DS_Store) |
 | 2026-06-05 | 2026-06-05 | PNG | [missing-name.png](missing-name.png) |
 | 2026-06-05 | 2026-06-05 | PNG | [outdated-contact-info.png](outdated-contact-info.png) |
