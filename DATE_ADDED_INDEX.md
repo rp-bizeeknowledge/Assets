@@ -4,6 +4,7 @@ Newest files first. Links are automatically updated from Git history.
 
 | Date Added | Last Updated | Type | File |
 |---|---|---|---|
+| 2026-06-08 | 2026-06-08 | PNG | [bizee-icon-dba-fictitious-name-1600x800.png](bizee-icon-dba-fictitious-name-1600x800.png) |
 | 2026-06-08 | 2026-06-08 | PNG | [bizee-icon-amendment-1600x1257.png](bizee-icon-amendment-1600x1257.png) |
 | 2026-06-08 | 2026-06-08 | PNG | [bizee-icon-researching-licenses-1600x1356.png](bizee-icon-researching-licenses-1600x1356.png) |
 | 2026-06-08 | 2026-06-08 | PDF | [Trademark .pdf](Trademark%20.pdf) |
