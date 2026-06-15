@@ -4,6 +4,7 @@ Newest files first. Links are automatically updated from Git history.
 
 | Date Added | Last Updated | Type | File |
 |---|---|---|---|
+| 2026-06-11 | 2026-06-11 | PNG | [bizee-icon-business-banking-offer-1600x800.png](bizee-icon-business-banking-offer-1600x800.png) |
 | 2026-06-11 | 2026-06-11 | PNG | [bizee-icon-bookkeeping-services-1600x800.png](bizee-icon-bookkeeping-services-1600x800.png) |
 | 2026-06-10 | 2026-06-10 | PNG | [bizee-icon-domain-and-email-1600x800.png](bizee-icon-domain-and-email-1600x800.png) |
 | 2026-06-08 | 2026-06-08 | PNG | [bizee-icon-dba-fictitious-name-1600x800.png](bizee-icon-dba-fictitious-name-1600x800.png) |
