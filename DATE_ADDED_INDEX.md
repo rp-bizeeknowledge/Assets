@@ -4,6 +4,8 @@ Newest files first. Links are automatically updated from Git history.
 
 | Date Added | Last Updated | Type | File |
 |---|---|---|---|
+| 2026-06-17 | 2026-06-17 | PNG | [FTB.png](FTB.png) |
+| 2026-06-17 | 2026-06-17 | PNG | [SOS.png](SOS.png) |
 | 2026-06-15 | 2026-06-15 | PDF | [8822-B.pdf](8822-B.pdf) |
 | 2026-06-11 | 2026-06-11 | PNG | [bizee-icon-business-banking-offer-1600x800.png](bizee-icon-business-banking-offer-1600x800.png) |
 | 2026-06-11 | 2026-06-11 | PNG | [bizee-icon-bookkeeping-services-1600x800.png](bizee-icon-bookkeeping-services-1600x800.png) |
