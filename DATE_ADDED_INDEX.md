@@ -4,6 +4,7 @@ Newest files first. Links are automatically updated from Git history.
 
 | Date Added | Last Updated | Type | File |
 |---|---|---|---|
+| 2026-06-17 | 2026-06-17 | GIF | [Sales Tax.gif](Sales%20Tax.gif) |
 | 2026-06-17 | 2026-06-17 | PNG | [COMPTROLLER.png](COMPTROLLER.png) |
 | 2026-06-17 | 2026-06-17 | PNG | [TX SOS.png](TX%20SOS.png) |
 | 2026-06-17 | 2026-06-17 | PNG | [FTB.png](FTB.png) |
