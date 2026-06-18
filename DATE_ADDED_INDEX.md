@@ -4,6 +4,7 @@ Newest files first. Links are automatically updated from Git history.
 
 | Date Added | Last Updated | Type | File |
 |---|---|---|---|
+| 2026-06-18 | 2026-06-18 | PNG | [bizee-icon-DBA1600x800.png](bizee-icon-DBA1600x800.png) |
 | 2026-06-18 | 2026-06-18 | PNG | [-dashboard-sections.png](-dashboard-sections.png) |
 | 2026-06-18 | 2026-06-18 | GIF | [Transaction Histroy Tab.gif](Transaction%20Histroy%20Tab.gif) |
 | 2026-06-18 | 2026-06-18 | PNG | [Ressolving an issue.png](Ressolving%20an%20issue.png) |
@@ -16,7 +17,6 @@ Newest files first. Links are automatically updated from Git history.
 | 2026-06-11 | 2026-06-11 | PNG | [bizee-icon-business-banking-offer-1600x800.png](bizee-icon-business-banking-offer-1600x800.png) |
 | 2026-06-11 | 2026-06-11 | PNG | [bizee-icon-bookkeeping-services-1600x800.png](bizee-icon-bookkeeping-services-1600x800.png) |
 | 2026-06-10 | 2026-06-10 | PNG | [bizee-icon-domain-and-email-1600x800.png](bizee-icon-domain-and-email-1600x800.png) |
-| 2026-06-08 | 2026-06-18 | PNG | [bizee-icon-dba-fictitious-name-1600x800.png](bizee-icon-dba-fictitious-name-1600x800.png) |
 | 2026-06-08 | 2026-06-08 | PNG | [bizee-icon-amendment-1600x1257.png](bizee-icon-amendment-1600x1257.png) |
 | 2026-06-08 | 2026-06-08 | PNG | [bizee-icon-researching-licenses-1600x1356.png](bizee-icon-researching-licenses-1600x1356.png) |
 | 2026-06-08 | 2026-06-08 | PDF | [Trademark .pdf](Trademark%20.pdf) |
