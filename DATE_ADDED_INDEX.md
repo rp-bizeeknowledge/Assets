@@ -179,13 +179,13 @@ Newest files first. Links are automatically updated from Git history.
 | 2026-06-01 | 2026-06-01 | PNG | [multiview-sections.png](multiview-sections.png) |
 | 2026-06-01 | 2026-06-01 | GIF | [Happy Birthday Rainbow Sticker.gif](Happy%20Birthday%20Rainbow%20Sticker.gif) |
 | 2026-06-01 | 2026-06-01 | GIF | [completion confetti gif.gif](completion%20confetti%20gif.gif) |
-| 2026-06-01 | 2026-06-03 | PNG | [Dashboard-sections.png](Dashboard-sections.png) |
+| 2026-06-01 | 2026-06-18 | PNG | [Dashboard-sections.png](Dashboard-sections.png) |
 | 2026-06-01 | 2026-06-01 | GIF | [dashboard-navigation.gif](dashboard-navigation.gif) |
 | 2026-06-01 | 2026-06-03 | PNG | [Business Formation KIT items.png](Business%20Formation%20KIT%20items.png) |
 | 2026-06-01 | 2026-06-01 | PNG | [Screenshot 2026-06-01 100652.png](Screenshot%202026-06-01%20100652.png) |
 | 2026-06-01 | 2026-06-01 | PNG | [dashboard-w-sections.png](dashboard-w-sections.png) |
 | 2026-06-01 | 2026-06-01 | PNG | [dashboard-sections-.png](dashboard-sections-.png) |
-| 2026-06-01 | 2026-06-01 | PNG | [dashboard-sections.png](dashboard-sections.png) |
+| 2026-06-01 | 2026-06-18 | PNG | [dashboard-sections.png](dashboard-sections.png) |
 | 2026-06-01 | 2026-06-01 | PNG | [dashboard.png](dashboard.png) |
 | 2026-05-29 | 2026-05-29 | PNG | [Billing Team.png](Billing%20Team.png) |
 | 2026-05-29 | 2026-05-29 | PNG | [Customer Service.png](Customer%20Service.png) |
