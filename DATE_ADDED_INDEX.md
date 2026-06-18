@@ -4,6 +4,7 @@ Newest files first. Links are automatically updated from Git history.
 
 | Date Added | Last Updated | Type | File |
 |---|---|---|---|
+| 2026-06-18 | 2026-06-18 | PNG | [Click view company.png](Click%20view%20company.png) |
 | 2026-06-18 | 2026-06-18 | PNG | [bizee-icon-DBA1600x800.png](bizee-icon-DBA1600x800.png) |
 | 2026-06-18 | 2026-06-18 | PNG | [-dashboard-sections.png](-dashboard-sections.png) |
 | 2026-06-18 | 2026-06-18 | GIF | [Transaction Histroy Tab.gif](Transaction%20Histroy%20Tab.gif) |
