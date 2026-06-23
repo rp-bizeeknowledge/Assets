@@ -4,6 +4,7 @@ Newest files first. Links are automatically updated from Git history.
 
 | Date Added | Last Updated | Type | File |
 |---|---|---|---|
+| 2026-06-23 | 2026-06-23 | GIF | [VA C&R Standalone V2.gif](VA%20C%26R%20Standalone%20V2.gif) |
 | 2026-06-23 | 2026-06-23 | GIF | [VA C&R Guidelines.gif](VA%20C%26R%20Guidelines.gif) |
 | 2026-06-18 | 2026-06-18 | PNG | [Click view company.png](Click%20view%20company.png) |
 | 2026-06-18 | 2026-06-18 | PNG | [bizee-icon-DBA1600x800.png](bizee-icon-DBA1600x800.png) |
