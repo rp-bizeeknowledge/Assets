@@ -4,6 +4,7 @@ Newest files first. Links are automatically updated from Git history.
 
 | Date Added | Last Updated | Type | File |
 |---|---|---|---|
+| 2026-06-30 | 2026-06-30 | PNG | [8-organization.png](8-organization.png) |
 | 2026-06-30 | 2026-06-30 | PNG | [emotionalintelligence.png](emotionalintelligence.png) |
 | 2026-06-30 | 2026-06-30 | PNG | [emotional-intelligence-.png](emotional-intelligence-.png) |
 | 2026-06-30 | 2026-06-30 | PNG | [emotional-intelligence 1.png](emotional-intelligence%201.png) |
