@@ -4,6 +4,7 @@ Newest files first. Links are automatically updated from Git history.
 
 | Date Added | Last Updated | Type | File |
 |---|---|---|---|
+| 2026-06-30 | 2026-06-30 | PNG | [emotional-intelligence-.png](emotional-intelligence-.png) |
 | 2026-06-30 | 2026-06-30 | PNG | [emotional-intelligence 1.png](emotional-intelligence%201.png) |
 | 2026-06-23 | 2026-06-23 | GIF | [VA C&R Standalone V2.gif](VA%20C%26R%20Standalone%20V2.gif) |
 | 2026-06-23 | 2026-06-23 | GIF | [VA C&R Guidelines.gif](VA%20C%26R%20Guidelines.gif) |
