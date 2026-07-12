@@ -4,6 +4,7 @@ Newest files first. Links are automatically updated from Git history.
 
 | Date Added | Last Updated | Type | File |
 |---|---|---|---|
+| 2026-07-12 | 2026-07-12 | JPG | [Bizee-favicon.jpg](Bizee-favicon.jpg) |
 | 2026-06-30 | 2026-06-30 | PNG | [interpersonal-skills.png](interpersonal-skills.png) |
 | 2026-06-30 | 2026-06-30 | PNG | [8-organization.png](8-organization.png) |
 | 2026-06-30 | 2026-06-30 | PNG | [emotionalintelligence.png](emotionalintelligence.png) |
